@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: PenguinPerk <perk@penguinnorth.com>
+  description: Install quassel-core
+  license: MIT
+  min_ansible_version: 2.2
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+  galaxy_tags:
+    - networking
+    - chat
+
+dependencies: []
