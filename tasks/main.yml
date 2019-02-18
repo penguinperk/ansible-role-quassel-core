@@ -10,6 +10,12 @@
     name: quassel-core
     state: present
 
+- name: Install netstat
+  apt:
+    name: net-tools
+    state: present
+
+
 - name: Enable quassel-core on boot
   service:
     name: quasselcore
