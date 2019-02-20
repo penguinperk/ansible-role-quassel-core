@@ -1,0 +1,11 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Install netstat
+      apt:
+        name: net-tools
+        state: present
+    - name: Install UFW - Uncomplicated Firewall
+      apt: name=ufw state=latest
