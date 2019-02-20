@@ -10,21 +10,16 @@
     name: quassel-core
     state: present
 
-- name: Install netstat
-  apt:
-    name: net-tools
-    state: present
-
-
 - name: Enable quassel-core on boot
   service:
     name: quasselcore
     state: started
     enabled: true
 
-# - name: Setup ufw firewall rule
-#  ufw:
-#    rule: allow
-#    port: "4242"
-#    proto: tcp
-#  when: quasselcore_setup_ufw
+- name: Setup ufw firewall rule
+  become: true
+  ufw:
+    rule: allow
+    port: "4242"
+    proto: tcp
+  when: quasselcore_setup_ufw
