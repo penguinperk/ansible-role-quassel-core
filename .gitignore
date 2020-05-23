@@ -1,0 +1,9 @@
+.DS_Store
+.vagrant/
+vagrant_ansible_inventory_default
+*.cache
+*.retry
+*.retry
+*/__pycache__
+*.pyc
+test.sh
