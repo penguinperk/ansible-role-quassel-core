@@ -1,3 +1,5 @@
+![CI](https://github.com/penguinperk/ansible-role-quassel-core/workflows/CI/badge.svg)
+
 Role Name
 =========
 
